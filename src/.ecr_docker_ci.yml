@@ -1,0 +1,18 @@
+---
+
+Global:
+  actions:
+    - build
+    - push
+    - push_to_ecr
+
+Amazon ECR:
+  aws_access_key_id: 'PROVIDED_BY_ITOPS'
+  aws_secret_access_key: 'PROVIDED_BY_ITOPS'
+  region_name: 'us-west-2'
+  ecr_repo_name: 'company/testECRdockerCI'
+
+Docker:
+  tag: 'project_name_x:v0.1'
+
+...
